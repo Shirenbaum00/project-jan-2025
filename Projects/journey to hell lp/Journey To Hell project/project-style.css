@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.unica-one-regular {
+    font-family: "Unica One";
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(-45deg, #232323, #000000);
+    position: fixed;
+    display: flex;
+    Justify-content: center;
+}
+
+.inner {
+    width: 70vw;
+    height: 70vw;
+
+    background-image: url(DT\ Hellbot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(2fr 2fr 2fr);
+    margin-top: 15px;
+}
+
+form {
+    font-family: "Unica One";
+    color: white;
+    width: 200px;
+    height: 80vh;
+    Margin: auto;
+    grid-column: 3/4;
+    filter: drop-shadow(5px 5px 50px #ea8e58);
+
+
+}
+
+label {
+    margin: 5px;
+}
+
+input,
+textarea,
+button {
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    border-style: solid;
+    border-color: #F3D09E;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    font-size: 16pt;
+    font-family: "Unica One";
+    font-weight: 600;
+    box-shadow: 0px 0px 20px #e2962a;
+    color: #F3D09E;
+    margin-top: 10px;
+}
+
+.radioButton {
+    height: 20px;
+    width: 20px;
+}
+
+#start {
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .inner {
+        display: flex;
+        Justify-content: center;
+    }
+
+
+    form {
+
+        Position: Absolute;
+        Top: 50%;
+        Left: 40%;
+        Margin-top: -100px;
+        Margin-left: -100px
+    }

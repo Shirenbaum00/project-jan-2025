@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+
+.circle-cursor {
+    font-family: "Tektur";
+    font-weight: bold;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 3, 221, 0.8);
+    mix-blend-mode: exclusion;
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease-out;
+
+
+
+}
+
+body {
+    background-image: linear-gradient(#00544D, #9FFF96);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: none;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+h1 {
+    font-family: tektur;
+    font-weight: 800;
+    color: white;
+    font-size: 30vh;
+    margin-left: -20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+    line-height: 1;
+}
+
+#model {
+
+    margin-left: -200px;
+    transition: 1s;
+}
+
+#model:hover {
+    margin-left: -180px;
+    transition: 1s;
+}
+
+
+form {
+    display: block;
+    position: relative;
+
+    Top: 0;
+    Bottom: 0;
+    Left: 0;
+    Right: 0;
+    Margin: auto;
+
+    font-family: tektur;
+    color: white;
+    z-index: 2;
+}
+
+label {
+    margin: 10px;
+
+}
+
+input,
+textarea {
+    color: #676767;
+    font-family: tektur;
+    font-size: 16pt;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 10px;
+    border-style: none;
+    width: 200px;
+    font-family: tektur;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #F2FF36, #7AF62C);
+    transition: 1s;
+
+}
+
+button:hover {
+
+    background-image: linear-gradient(to right, #0c0c0c, #373737);
+    color: white;
+    font-size: 30px;
+    width: 250px;
+    transition: 1s;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* mid responsiveness */
+
+
+
+@media (max-width: 1135px) {
+
+
+
+
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+
+
+    }
+
+    form {
+        margin-left: -50vh;
+    }
+
+}
+
+/* Mobile responsiveness */
+
+
+@media (max-width: 900px) {
+
+    .circle-cursor {
+        /* Hide the custom cursor element */
+        display: none;
+    }
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        /* Show the default system cursor */
+        cursor: auto;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: block;
+
+
+    }
+
+    #model {
+        position: static;
+        margin-top: -50vh;
+        margin-left: 100px;
+        Display: Table-cell;
+        vertical-align: middle;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+
+    button {
+        pointer-events: none;
+    }
+
+    h1 {
+        font-size: 20vh;
+    }
+
+    form {
+        text-align: center;
+        position: relative;
+        margin-top: -80vh;
+        filter: drop-shadow(0 0 2rem rgb(0, 0, 0));
+        margin-left: 0;
+
+    }
+
+    #divider {
+        display: block;
+        height: 20px;
+    }
+
+}

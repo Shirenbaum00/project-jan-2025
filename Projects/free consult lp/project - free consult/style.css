@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 1265px;
+    overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    font-family: "Heebo";
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+
+
+
+}
+
+#main {
+
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    Top: 0;
+    Bottom: 0;
+    Left: 0;
+    Right: 0;
+    Margin: auto;
+
+
+
+
+}
+
+#formdiv {
+    Top: 0;
+    Bottom: 0;
+    Left: 0;
+    Right: 0;
+    Margin: auto;
+
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 66px;
+    color: #FDBD03;
+}
+
+p {
+    font-size: 20px;
+    color: #020253;
+    margin-bottom: 25px;
+}
+
+form {
+    font-size: 16px;
+    font-weight: bold;
+    width: 80vw;
+    margin-top: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+#image {
+    width: 20vw;
+    height: fit-content;
+    padding: 40px;
+
+
+
+}
+
+
+
+label {
+    color: #2C2C2C;
+}
+
+input {
+    border: none;
+    background-color: #E5EEFF;
+    border-bottom: 4px solid #FDBD03;
+    height: 50px;
+    width: 22vw;
+    margin: 5px;
+    padding: 25px;
+}
+
+#top {
+    display: flex;
+}
+
+textarea {
+    border: none;
+    background-color: #E5EEFF;
+    border-bottom: 4px solid #FDBD03;
+    width: 45vw;
+    height: 142px;
+    padding: 25px;
+}
+
+button {
+    font-weight: 600;
+    font-size: 22px;
+    border: none;
+    background-color: #FDBD03;
+    height: 50px;
+    width: 166px;
+    margin-top: 50px;
+
+}
+
+
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 1100px;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+
+}
+
+
+.icons {
+
+    background-color: #FDBD03;
+    height: 95px;
+    width: 95px;
+    padding: 20px;
+    border-radius: 50px;
+
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 25px;
+
+}
+
+#whatsapp {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: none;
+
+}
+
+img {
+    size: 100%;
+}
+
+#top-line {
+    display: block;
+    height: 18px;
+    width: 434px;
+    position: absolute;
+    top: 0px;
+
+    right: 0px;
+    background-color: #FDBD03;
+}
+
+#bottom-line {
+    display: block;
+    height: 18px;
+    width: 1038px;
+    margin-left: 1px;
+    background-color: #FDBD03;
+    position: absolute;
+    top: 1240px;
+    left: 1px;
+
+}
+
+.star {
+    color: rgb(226, 43, 43);
+}
+
+
+/* Mobile version */
+@media (max-width:700px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main {
+        display: block;
+        align-items: center;
+
+    }
+
+
+
+    h1 {
+        text-align: center;
+        font-size: 66px;
+        color: #FDBD03;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: #020253;
+    }
+
+    form {
+        text-align: right;
+        width: 80vw;
+        margin-top: 50px;
+    }
+
+    input {
+        width: 80vw;
+        height: 37px;
+        margin: 5px;
+        padding: 25px;
+    }
+
+    #top {
+        display: block;
+    }
+
+    textarea {
+        width: 80vw;
+        height: 105px;
+        padding: 25px;
+    }
+
+    button {
+        width: 80vw;
+        margin-top: 10px;
+    }
+
+    #top-line {
+        height: 10px;
+        width: 65vw;
+    }
+
+    #bottom-line {
+        height: 10px;
+        width: 100vw;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* Center align the links */
+        width: 100%;
+    }
+
+    .icons {
+        height: 46px;
+        width: 46px;
+        padding: 15px;
+        border-radius: 50px;
+        margin: 5px;
+    }
+
+    #whatsapp {
+        display: none;
+    }
+}
+
+
+
+
+
+
+#image {
+    width: 30vw;
+    min-width: 200px;
+    margin: 20px;
+    float: none;
+    display: flex;
+    justify-self: center;
+
+}

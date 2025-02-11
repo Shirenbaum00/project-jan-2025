@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Tell</title>
+
+    <link rel="stylesheet" href="project-style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="circle-cursor"></div>
+
+        <H1>
+            SHOW <br> AND <br> TELL
+        </H1>
+        <img src="DT BLURMAN.png" alt="Futuristic fashion model" id="model">
+
+        <form name="formShow">
+
+            <label for="name">Your name</label>
+            <br>
+            <input type="text" name="name" required>
+            <br>
+            <label for="mail">Your E-mail</label>
+            <br>
+            <input type="email" name="mail" required>
+            <br>
+            <label for="telephone">Your Number</label>
+            <br>
+            <input type="tel" name="telephone" required pattern="[0-9]{4}[0-9]{3}[0-9]{3}">
+            <br>
+            <label for="message">Your message</label>
+            <br>
+            <textarea type="textArea" name="message"></textarea>
+            <br>
+            <span id="buttonContainer">
+                <!-- <input id="button" type="button" value="-I'm Ready-" onclick=""> -->
+                <button type="submit" onclick="SubmitEvent">I'm Ready</button>
+            </span>
+            <div id="divider"></div>
+        </form>
+    </div>
+    <script>
+        // JavaScript
+        const cursor = document.querySelector('.circle-cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+
+            // Set the position of the cursor element
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+
+        });
+    </script>
+</body>
+
+</html>

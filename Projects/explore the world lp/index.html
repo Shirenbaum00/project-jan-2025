@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- pointer -->
+
+    <div class="circle-cursor"></div>
+
+    <!-- header -->
+
+    <header>
+        <div id="navigation">
+
+
+            <nav>
+                <a id="logo" href="../../index.html">
+                    <img src="Graphcs/logo.png" alt="logo saying genie-s" style="width: 100px;">
+                </a>
+
+                <ul id="menuList">
+
+                    <li><a class="nav-links" href="../../#hero">Home<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="../../#aboutMe">About<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="../../#skillsAndServices">Services<span class="text-dividers"> |
+                            </span></a></li>
+                    <li><a class="nav-links" href="../../#projects">Work<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="../../#logos">Experince<span class="text-dividers"> | </span></a>
+                    </li>
+                    <li><a class="nav-links" href="../../#contact-us">Contact<span class="text-dividers"> | </span></a>
+                    </li>
+
+                    <div id="social">
+                        <li><a target="_blank" class="nav-links" href="https://www.behance.net/64c50513"><img
+                                    src="https://img.icons8.com/?size=100&id=16280&format=png&color=FFFFFF"
+                                    alt="behance icon"></a></li>
+                        <li><a target="_blank" class="nav-links" href="https://www.linkedin.com/in/shir-birenbaum/"><img
+                                    src="https://img.icons8.com/?size=100&id=102748&format=png&color=FFFFFF"
+                                    alt="linkedin icon" width="35px" height="35px"></a></li>
+                        <li><a class="nav-links" target="_blank" href="https://github.com/Shirenbaum00"><img
+                                    src="https://img.icons8.com/?size=100&id=62856&format=png&color=FFFFFF"
+                                    alt="GIT icon"></a></li>
+                    </div>
+
+                </ul>
+                <div id="burgercon" onclick="toggleMenu()">
+                    <img src="graphcs/burger.svg" alt="">
+                </div>
+            </nav>
+            <img id="whatsapp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=000000"
+                alt="whatsapp icon">
+        </div><img id="nav-bar-bg" src="Graphcs/nav-bg.svg" alt="purple abstract shape for the nav bar background">
+
+    </header>
+
+    <!------------------------- page ---------------------->
+
+
+    <div class="page">
+        <div class="main-container">
+            <h1>Explore the world
+            </h1>
+            <p>We are all so different and diverse, each has their own world. how beautiful it could be to
+                gather under one sky and tell our stories as the time goes by? Join us on our journey of
+                exploration through eachothers eyes.
+            </p>
+            <div class="icons-box">
+
+                <a href="Explore the world - project.zip"><img src="graphcs/download icon.svg" class="icons"
+                        alt="a download icon"></a>
+
+                <div class="tools">
+
+                    <div class="tool">
+                        <img src="graphcs/purpleicons/html5.png" alt="html icon">
+                        <p>html</p>
+                    </div>
+
+                    <div class="tool">
+                        <img src="graphcs/purpleicons/CSS3.png" alt="css icon">
+                        <p>css</p>
+                    </div>
+
+                </div>
+
+                <a target="_blank" href="Explore the world - project/index.html"><img class=" icons"
+                        alt="icon of a bigger screen view" src="graphcs/view icon.svg"></a>
+
+            </div>
+            <img id="screenshot" src="explore the world screen.png">
+        </div>
+    </div>
+
+
+
+
+    <!---------------------- contact --for future purposes---------------->
+
+
+
+    <!-- ----------------footer--------------- -->
+
+    <footer>
+        <div class="footer-line">
+            <p>© 2025 Designed and developed by Shir Birenbaum</p>
+        </div>
+    </footer>
+
+
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "100vh";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+
+        function openClose() {
+            var x = document.getElementById("navigation");
+        }
+
+    </script>
+
+</body>
+
+</html>

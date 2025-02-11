@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: "Heebo";
+
+}
+
+#pic {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+#pic-div {
+    width: 55vw;
+    max-width: 55vw;
+    height: 100vh;
+    background-image: url(Coffee@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    left: 0;
+
+}
+
+#right {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-div {
+    width: 60%;
+    height: fit-content;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #020253;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+
+    color: #020253;
+}
+
+label {
+    color: #020253;
+    margin: 10px 0px 10px 0px;
+}
+
+input {
+    border: none;
+    border-bottom: 3px solid #020253;
+    background-color: #E5EEFF;
+    height: 50px;
+    width: 27vw;
+    margin: 10px 0px 10px 0px;
+    padding: 15px;
+}
+
+button {
+    color: white;
+    background-color: #020253;
+    border: none;
+    height: 50px;
+    width: 27vw;
+    margin: 10px 0px 10px 0px;
+}
+
+@media (max-width: 800px) {
+
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic-div {
+        display: none;
+    }
+
+    #pic {
+        display: block;
+        width: 100vw;
+        height: 30vh;
+        object-fit: cover;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    input {
+        border: none;
+        border-bottom: 3px solid #020253;
+        background-color: #E5EEFF;
+        height: 35px;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        padding: 15px;
+    }
+
+    button {
+        color: white;
+        background-color: #020253;
+        border: none;
+        height: 35px;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+
+
+    #right {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form-div {
+        width: 80%;
+        height: fit-content;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        color: #020253;
+        margin: 15px 0px 10px 0px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #020253;
+        margin: 0px 0px 15px 0px;
+    }
+}

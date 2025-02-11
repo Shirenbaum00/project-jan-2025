@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+@keyframes fade-in {
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+:root {
+    --cold-blue: #495AF6;
+}
+
+body {
+    height: fit-content;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+
+#burgercon {
+    display: none;
+}
+
+
+#menuList {
+    background-color: none;
+}
+
+#nav-bar-bg {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: auto;
+    height: 200px;
+    z-index: 5;
+    position: fixed;
+    filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.338));
+}
+
+#navigation {
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 500;
+    font-family: "Bricolage Grotesque";
+    font-weight: normal;
+    height: 40px;
+    width: fit-content;
+
+
+}
+
+#logo {
+    margin-right: 10px;
+    height: 80px;
+    width: auto;
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    float: left;
+
+    padding-top: 5px;
+    padding-bottom: 1px;
+
+}
+
+nav ul li a {
+    padding: 10px;
+    gap: 20px;
+    display: block;
+    text-decoration: none;
+    line-height: 2;
+    font-style: 14pt;
+    text-align: left;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+}
+
+#logo {
+    float: inline-start;
+    margin: 10px;
+    height: 120%;
+}
+
+.nav-links {
+    transition: 0.5s;
+}
+
+.nav-links:hover {
+    scale: 1.2;
+    height: 50%;
+    color: yellow;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.text-dividers {
+    opacity: 20%;
+    letter-spacing: 10px;
+
+}
+
+#social {
+    display: flex;
+}
+
+#social img {
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+
+}
+
+#whatsapp {
+
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 30px;
+    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.195));
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    position: fixed;
+    overflow: visible;
+}
+
+
+/* -------------------------------page ---------------------------------*/
+
+
+.page {
+    width: 100vw;
+    padding: 50px 0px 150px 0px;
+    height: fit-content;
+    background: linear-gradient(black, #495AF6);
+}
+
+.main-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "bricolage grotesque";
+    color: white;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 8vh;
+}
+
+.main-container p {
+    font-family: inter;
+    text-align: center;
+    line-height: 2;
+    width: 50%;
+}
+
+.icons-box {
+    padding: 15px;
+
+    margin: 50px;
+    background-color: #495AF6;
+    width: 70vw;
+    height: 120px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.tools {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.tool {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tool img {
+    width: 65px;
+    height: auto;
+    filter: brightness(500%);
+}
+
+.tool p {
+    width: fit-content;
+    font-weight: bold;
+    font-family: inter;
+    text-align: center;
+}
+
+#screenshot {
+    width: 70vw;
+    border-radius: 50px;
+}
+
+
+.icons {
+    height: 90px;
+    width: 90px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.195));
+    overflow: visible;
+}
+
+
+/* ----------------------------footer ---------------------------------*/
+
+footer {
+    position: relative;
+    background: #495AF6;
+    width: 100VW;
+    height: 100px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    font-family: "bricolage grotesque";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------------------TABLET---------------------------------*/
+
+@media (max-width:1000px) {
+
+    body {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .circle-cursor {
+        /* display: none; */
+    }
+
+    #burgercon {
+        display: block;
+        margin: 20px;
+        z-index: 502;
+
+
+    }
+
+
+    header {
+        margin: 0px;
+        position: top;
+
+        width: 100vw;
+        height: fit-content;
+
+    }
+
+
+
+
+    #nav-bar-bg {
+        width: 100vw;
+        /* overflow-x: hidden; */
+        height: auto;
+
+    }
+
+
+
+
+    #navigation {
+        position: relative;
+        margin: 0px;
+        display: block;
+        left: 0px;
+        width: 100vw;
+        height: max-content;
+        z-index: 501;
+
+    }
+
+    #logo {
+        margin-right: 0px;
+        height: inherit;
+        width: auto;
+        padding: 10px;
+        z-index: 502;
+    }
+
+    nav {
+        margin: 0px;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        z-index: 502;
+
+    }
+
+    #menuList {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        list-style-type: none;
+        background-color: #495AF6;
+        z-index: 501;
+        overflow: hidden;
+        border-radius: 0px 0px 30px;
+        transition: all 0.5s;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        height: auto;
+        width: 100vw;
+        list-style-type: none;
+        z-index: 501;
+        overflow: hidden;
+
+    }
+
+    nav ul li {
+        float: none;
+
+        padding-top: 5px;
+        padding-bottom: 1px;
+        z-index: 501;
+
+    }
+
+
+    nav ul li a {
+        font-size: 20pt;
+        text-align: center;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    #logo {
+        float: inline-start;
+        margin: 10px;
+        height: 50px;
+    }
+
+    .nav-links {
+        transition: none
+    }
+
+    .nav-links:hover {
+        scale: 1;
+        height: 50%;
+        color: rgb(255, 255, 255);
+        transition: none;
+    }
+
+    .text-dividers {
+        opacity: 00%;
+        letter-spacing: 10px;
+
+    }
+
+
+
+    #social img {
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    #whatsapp {
+
+        display: none;
+    }
+}
+
+/* ----------------------------MOBILE---------------------------------*/
+
+@media (max-width: 600px) {
+
+
+
+    .page {}
+
+    .main-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-family: "bricolage grotesque";
+        color: white;
+
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20vh;
+        font-size: 10vw;
+    }
+
+    .main-container p {
+        font-family: inter;
+        text-align: center;
+        line-height: 2;
+        width: 85%;
+    }
+
+    .icons-box {
+        padding: 10px;
+
+        margin: 20px;
+        background-color: #495AF6;
+        width: 80vw;
+        height: 80px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .tools {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .tool {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tool img {
+        width: 35px;
+        height: auto;
+        filter: brightness(500%);
+    }
+
+    .tool p {
+        font-weight: 500;
+        font-family: inter;
+        text-align: center;
+    }
+
+    #screenshot {
+        width: 80vw;
+        border-radius: 30px;
+    }
+
+
+    .icons {
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 100px;
+        filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.195));
+        overflow: visible;
+    }
+
+    .tool p {
+        width: fit-content;
+        font-weight: normal;
+        font-family: inter;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

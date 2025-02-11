@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shir's Portfolio homepage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- pointer -->
+
+    <div class="circle-cursor"></div>
+
+    <!-- header -->
+
+    <header>
+        <div id="navigation">
+
+
+            <nav>
+                <img id="logo" src="Graphics/logo.png" alt="logo saying genie-s">
+                <ul id="menuList">
+
+                    <li><a class="nav-links" href="#hero">Home<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="#aboutMe">About<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="#skillsAndServices">Services<span class="text-dividers"> |
+                            </span></a></li>
+                    <li><a class="nav-links" href="#projects">Work<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="#logos">Experince<span class="text-dividers"> | </span></a></li>
+                    <li><a class="nav-links" href="#contact-us">Contact<span class="text-dividers"> | </span></a></li>
+
+                    <div id="social">
+                        <li><a target="_blank" class="nav-links" href="https://www.behance.net/64c50513"><img
+                                    src="https://img.icons8.com/?size=100&id=16280&format=png&color=FFFFFF"
+                                    alt="behance icon"></a></li>
+                        <li><a target="_blank" class="nav-links" href="https://www.linkedin.com/in/shir-birenbaum/"><img
+                                    src="https://img.icons8.com/?size=100&id=102748&format=png&color=FFFFFF"
+                                    alt="linkedin icon" width="35px" height="35px"></a></li>
+                        <li><a class="nav-links" target="_blank" href="https://github.com/Shirenbaum00"><img
+                                    src="https://img.icons8.com/?size=100&id=62856&format=png&color=FFFFFF"
+                                    alt="instagram icon"></a></li>
+                    </div>
+
+
+                </ul>
+                <div id="burgercon" onclick="toggleMenu()">
+                    <img src="Graphics/mobile/burger.svg" alt="">
+                </div>
+            </nav>
+
+            <!-- trial- will be up soon--
+             -- <iframe id="hero-wordloop" src="Graphics/worldsoop.json" background="transparent" speed="1"
+                style="width: 100vw; height: 300px;" loop controls autoplay></iframe> -->
+
+            <img id="whatsapp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=000000"
+                alt="whatsapp icon">
+        </div><img id="nav-bar-bg" src="Graphics/nav-bg.svg" alt="purple abstract shape for the nav bar background">
+
+    </header>
+
+    <!-- hero section -->
+
+    <section class="container" id="hero">
+        <h1>Hello,<br>Need a hand?</h1>
+        <div id="hero-footer">
+            <div class="hero-boxes">
+                <div class="hero-numbers" data-count="5">0</div>
+                <div class="numbers-text">years of experience</div>
+            </div>
+            <div class="hero-boxes">
+                <div class="hero-numbers" data-count="100">0</div>
+                <div class="numbers-text">projects done</div>
+            </div>
+            <div class="hero-boxes">
+                <div class="hero-numbers" data-count="30">0</div>
+                <div class="numbers-text">satisfied partners</div>
+            </div>
+        </div>
+        <!-- <img id="lines" src="Graphics/CHECKERED BG.svg" alt="horizontal and vertical lines"> -->
+        <img id="hero-3hand" src="Graphics/3 hand.svg" alt="drawing of a hand with a O gesture">
+        <img id="hero-vhand" src="Graphics/V hand.svg" alt="drawing of a hand with a V gesture">
+        <img id="hero-pointer" src="Graphics/pointer hero.svg" alt="drawing of a hand with a pointer gesture">
+
+    </section>
+
+    <!-- about me section -->
+
+    <section class="container" id="aboutMe">
+
+
+        <!-- top-->
+
+        <div class="me-top">
+            <h1 id="inter-text">Hi, I'm Shir</h1>
+
+            <img id="do-pic" src="Graphics/what I do.svg" alt="">
+
+            <img id="shir-pic" src="Graphics/idea machine.png"
+                alt="a photo of shir the product designer holding a luminating lightbolb and the words-aka the idea machine on the side">
+            <img id="dark-wave" src="Graphics/dark-wave.svg" alt="dark wavey semi transparent background">
+        </div>
+
+        <!-- bottom-->
+
+        <div id="me-bottom">
+
+
+            <div>
+                <h2>You can count on me</h2>
+            </div>
+            <div id="checkmarks">
+                <span class="checkRow">
+                    <div class="checked">
+                        <img src="Graphics/check.svg" alt="a blue check icon">
+                        <h3>Goal Oriented</h3><br>
+                        <p>The mission's objectives are how we can define success and stay in lane</p>
+                    </div>
+                    <div class="checked">
+                        <img src="Graphics/check.svg" alt="a blue check icon">
+                        <h3>Business driven</h3><br>
+                        <p>Eyes on the prize, meaning it all comes down to your financial success</p>
+                    </div>
+
+
+                    <div class="checked">
+                        <img src="Graphics/check.svg" alt="a blue check icon">
+                        <h3>Innovative creative thinker</h3><br>
+                        <p>In a world full of competition, success follows those who dare take the first step</p>
+                    </div>
+                </span>
+                <span class="checkRow">
+                    <div class="checked">
+                        <img src="Graphics/check.svg" alt="a blue check icon">
+                        <h3>Efficient problem solver</h3><br>
+                        <p>In any project, high quality and fast results make a huge difference</p>
+                    </div>
+
+                    <div class="checked">
+                        <img src="Graphics/check.svg" alt="a blue check icon">
+                        <h3>Data centric advocate</h3><br>
+                        <p>No guessing, not leaving it to chance - results that prove themselves</p>
+                    </div>
+                    <div class="checked">
+                        <img src="Graphics/check.svg" alt="a blue check icon">
+                        <h3>Adaptable team player</h3><br>
+                        <p>Keep eachother up and - one's success is the group's success</p>
+                    </div>
+                </span>
+            </div>
+    </section>
+
+    <!-- skills and services -->
+
+    <section class="container" id="skillsAndServices">
+        <div id="services-header">
+            <H1>What can I do for you?</H1>
+            <h2>Every service I can provide for you and your business</h2>
+        </div>
+        <div id="services-box">
+            <div id="services">
+
+                <p class="service">Brand identity design</p>
+                <p class="service">Logo design</p>
+                <p class="service">Brand strategy</p>
+                <p class="service">Web design</p>
+                <p class="service">User experience design</p>
+                <p class="service">User research</p>
+                <p class="service">Interaction design</p>
+                <p class="service">Marketing design</p>
+                <p class="service">Social templates</p>
+                <p class="service">Motion design</p>
+                <p class="service">UX architecture</p>
+                <p class="service">AR/VR UX & UI</p>
+                <p class="service">Naming</p>
+                <p class="service">Illustration</p>
+                <p class="service">Prototyping</p>
+                <p class="service">User/Persona profiling</p>
+                <p class="service">Front-end development</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- skill icon section ---------------------------->
+
+    <section class="skill-section">
+        <div id="skills-header">
+            <h2>My toolbox - everything I know (so far)</h2>
+        </div>
+        <div class="skills-box">
+            <img class="toolIcons" src="./Graphics/tools icons/illustrator.svg" alt="adobe illustrator icon">
+            <img class="toolIcons" src="./Graphics/tools icons/Photoshop.svg" alt="adobe photoshop icon">
+            <img class="toolIcons" src="./Graphics/tools icons/Aftereffects.svg" alt="adobe after effects icon">
+            <img class="toolIcons" src="./Graphics/tools icons/" alt="adobe xd icon">
+            <img class="toolIcons" src="Graphics/tools icons/Figma (Prototyping).svg" alt="figma icon">
+            <img class="toolIcons" src="Graphics/tools icons/Procreate (Illustrations).svg" alt="procreate icon">
+            <img class="toolIcons" src="Graphics/tools icons/CANVA.svg" alt="canva icon">
+            <img class="toolIcons" src="Graphics/tools icons/html5.svg" alt="html icon">
+            <img class="toolIcons" src="Graphics/tools icons/CSS3.svg" alt="css icon">
+            <img class="toolIcons" src="Graphics/tools icons/JS.svg" alt="javaScript icon">
+            <img class="toolIcons" src="Graphics/tools icons/Midjourney (AI ART).svg" alt="midjourney icon">
+
+        </div>
+    </section>
+
+    <!-- process section - ////on hold-->
+
+    <!-- <section id="process">
+        <div id="process-container" class="container">
+            <div id="process-left">
+                <img src="Graphics/process.svg" alt="">
+            </div>
+            <div id="process-right">
+                <div class="process-step" id="p1">
+                    <h2>Goal Definition -</h2>
+                    <p>setting clear, measurable objectives that align with your brand’s vision and goals.</p>
+                </div>
+                <div class="process-step" id="p2">
+                    <h2>Gant -</h2>
+                    <p>Implementing a Gantt chart in our project planning process is incredibly beneficial for our
+                        clients. It ensures a clear
+                        and organized timeline, smoother execution, timely delivery, and higher quality outcomes.</p>
+                </div>
+                <div class="process-step" id="p3">
+                    <h2>Research -</h2>
+                    <p>Begining with Market Research, where we dive into the depths of your industry, competitors, and
+                        target audience to
+                        gather valuable insights.</p>
+                </div>
+                <div class="process-step" id="p4">
+                    <h2>Concept & Design -</h2>
+                    <p>where our creative expertise comes to life, crafting designs that are not only visually stunning
+                        but also strategically
+                        sound.</p>
+                </div>
+                <div class="process-step" id="p5">
+                    <h2>QA & Lessons -</h2>
+                    <p>rigorously testing my designs and taking stock of the outcomes to refine my approach
+                        continuously, making the design
+                        more compatible with your brand for the long run!</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- work section-->
+
+    <section id="projects">
+
+        <div id="projects-header">
+            <h1>Look at what I can do</h1>
+        </div>
+        <div id="gallery-items">
+
+            <!-- -----------------------------first row--------------------------------->
+
+            <div class="project-container">
+                <div class="top">
+                    <img src="Graphics/projects screens/coffee screenshot.png" alt="">
+                </div>
+                <div class="bottom">
+                    <h2>Coffee time</h2>
+                    <p>a short but fun project playing with the idea of getting a coffee together instead of just
+                        setting a
+                        boring appointment.
+                        In this fun project you will see how a simple idea can turn into an engaging and interactive
+                        experience
+                        for users.
+                    </p>
+                    <div class="tools-used">
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/html5.png" alt="">
+                            <p>html</p>
+                        </div>
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/CSS3.png" alt="">
+                            <p>css</p>
+                        </div>
+                    </div>
+                    <button class="project-buttons">
+                        <a target="_blank" href="Projects/Coffee lp/index.html">Click to see
+                            project ></a></button>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="top">
+                    <img src="Graphics/projects screens/show and tell screen.png" alt="">
+                </div>
+                <div class="bottom">
+                    <h2>Show and tell</h2>
+                    <p>Come in and see the world through the eyes of fashion enthusiasts who make the expression "dress
+                        to impress" sound like a cliché. In this dinamic gallery show you will both see and unsee what
+                        fashion is all about.
+                    </p>
+                    <div class="tools-used">
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/Midjourney (AI ART).png" alt="">
+                            <p>AI Art</p>
+                        </div>
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/Figma (Prototyping).png" alt="">
+                            <p>Figma</p>
+                        </div>
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/html5.png" alt="">
+                            <p>html</p>
+                        </div>
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/CSS3.png" alt="">
+                            <p>css</p>
+                        </div>
+                    </div>
+                    <button class="project-buttons">
+                        <a target="_blank" href="Projects/Show and tell lp/index.html">Click to see project</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="top">
+                    <img src="Graphics/projects screens/think outside the box screen.png" alt="">
+                </div>
+                <div class="bottom">
+                    <h2>Think outside the box</h2>
+                    <p>in a world filled with competition, creativity is the number one underrated skill. Innovation and
+                        creativity are the building blocks of a great company. If you want to learn more about how to
+                        improve your creativity skills, join our community and reach out.
+                    </p>
+                    <div class="tools-used">
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/html5.png" alt="">
+                            <p>html</p>
+                        </div>
+                        <div class="inside">
+                            <img src="Graphics/purpleicons/CSS3.png" alt="">
+                            <p>css</p>
+                        </div>
+                    </div>
+                    <button class="project-buttons">
+                        <a target="_blank" href="Projects/box lp/index.html">Click to see project</a>
+                    </button>
+                </div>
+            </div>
+
+
+
+
+            <!-- -----------------------------second row--------------------------------->
+
+            <div id="gallery-items">
+                <div class="project-container">
+                    <div class="top">
+                        <img src="Graphics/projects screens/sweety screenshot.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h2>Sweety added sugar spice</h2>
+                        <p>Are you ready for some everything nice? sweets and spices mixed together to give you the
+                            ultimate candy!
+                            Comw check out this spicy landing page filled with goodies and fun design.
+                        </p>
+                        <div class="tools-used">
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/Figma (Prototyping).png" alt="">
+                                <p>Figma</p>
+                            </div>
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/html5.png" alt="">
+                                <p>html</p>
+                            </div>
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/CSS3.png" alt="">
+                                <p>css</p>
+                            </div>
+                        </div>
+                        <button class="project-buttons">
+                            <a target="_blank" href="Projects/sweety lp/index.html">Click to see project</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="top">
+                        <img src="Graphics/projects screens/explore the world screen.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h2>Explore the world</h2>
+                        <p>We are all so different and diverse, each has their own world. how beautiful it could be to
+                            gather under one sky and tell our stories as the time goes by? Join us on our journey of
+                            exploration through eachothers eyes.
+                        </p>
+                        <div class="tools-used">
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/html5.png" alt="">
+                                <p>html</p>
+                            </div>
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/CSS3.png" alt="">
+                                <p>css</p>
+                            </div>
+                        </div>
+                        <button class="project-buttons">
+                            <a target="_blank" href="Projects/explore the world lp/index.html">Click to see project</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="top">
+                        <img src="Graphics/projects screens/free colsult sceen.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h2>Free consultation</h2>
+                        <p>Need a free consult? Let's talk and see how I can help you achieve your goals. Strategy is
+                            the most important part of a plan. Reach out for a no-obligation consultation and let's get
+                            started on your project.</p>
+                        </p>
+                        <div class="tools-used">
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/html5.png" alt="">
+                                <p>html</p>
+                            </div>
+                            <div class="inside">
+                                <img src="Graphics/purpleicons/CSS3.png" alt="">
+                                <p>css</p>
+                            </div>
+                        </div>
+                        <button class="project-buttons">
+                            <a target="_blank" href="Projects/Free consult lp/index.html">Click to see project</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ------------------------third row--------------------------------->
+
+                <div id="gallery-items">
+                    <div class="project-container">
+                        <div class="top">
+                            <img src="Graphics/projects screens/journey to hell screen.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <h2>A journey to hell and back</h2>
+                            <p>In this web3 shooting survival game, you play in a team as either offence or defence. The
+                                background story is rich and there are numerous challenges to overcome. Immerse yourself
+                                in a world where every decision
+                                counts.</p>
+                            </p>
+                            <div class="tools-used">
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/Midjourney (AI ART).png" alt="">
+                                    <p>AI ART</p>
+                                </div>
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/Figma (Prototyping).png" alt="">
+                                    <p>Figma</p>
+                                </div>
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/html5.png" alt="">
+                                    <p>html</p>
+                                </div>
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/CSS3.png" alt="css icon">
+                                    <p>css</p>
+                                </div>
+                            </div>
+                            <button class="project-buttons">
+                                <a target="_blank" href="Projects/journey to hell lp/index.html">Click to see
+                                    project</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-container">
+                        <div class="top">
+                            <img src="Graphics/projects screens/forwards screenshot.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <h2>Forward</h2>
+                            <p>Let us lead you forward into success, with a step by step guide and our fast goal
+                                oriented approach. Leave your comfort zone behind because from now on you will see a
+                                whole new world. </p>
+                            </p>
+                            <div class="tools-used">
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/html5.png" alt="">
+                                    <p>html</p>
+                                </div>
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/CSS3.png" alt="">
+                                    <p>css</p>
+                                </div>
+                            </div>
+                            <button class="project-buttons">
+                                <a target="_blank" href="Projects/forward lp/index.html">Click to see project</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-container">
+                        <div class="top">
+                            <img src="Graphics/projects screens/explore the world screen.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <h2>Headline</h2>
+                            <p>Next project</p>
+                            </p>
+                            <div class="tools-used">
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/html5.png" alt="">
+                                    <p>html</p>
+                                </div>
+                                <div class="inside">
+                                    <img src="Graphics/purpleicons/CSS3.png" alt="">
+                                    <p>css</p>
+                                </div>
+                            </div>
+                            <button class="project-buttons">
+                                <a target="_blank" href="">Click to see project</a>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+    </section>
+
+    <!-- ------------------------Partners in crime--------------------------------->
+
+    <section id="logos">
+        <h1>Some of the companies I desiged for</h1><br><br>
+        <div id="logos-box">
+            <div class="logo-rows" id="logo-row-top">
+                <div class="logo-row-collapse">
+                    <img src="Graphics/logo-row-top/ALGODEUS.png" alt="" style="height: 90px;">
+                    <img src="Graphics/logo-row-top/BUYME.png" alt="" style="height: 100px;">
+                    <img src="Graphics/logo-row-top/CALCALA.png" alt="">
+                    <img src="Graphics/logo-row-top/HTVET.png" style="height: 30px;" alt="">
+                    <img src="Graphics/logo-row-top/IDF.png" alt="">
+                    <img src="Graphics/logo-row-top/RYKER.png" alt="">
+                    <img src="Graphics/logo-row-top/SHIBA.png" alt="">
+                    <img src="Graphics/logo-row-top/buywith.png" style="height: 40px;" alt="">
+                    <img src="Graphics/logo-row-top/SHANIDER.png" alt="">
+                    <img class="small-logos" src="Graphics/logo-row-top/TRIZZ.png" style="height: 100px;" alt="">
+                    <img src="Graphics/logo-row-top/XPLAIN.png" alt="">
+                </div>
+                <!-- Duplicate the content -->
+                <div class="logo-row-collapse">
+                    <img src="Graphics/logo-row-top/ALGODEUS.png" alt="" style="height: 90px;">
+                    <img src="Graphics/logo-row-top/BUYME.png" alt="" style="height: 100px;">
+                    <img src="Graphics/logo-row-top/CALCALA.png" alt="">
+                    <img src="Graphics/logo-row-top/HTVET.png" style="height: 30px;" alt="">
+                    <img src="Graphics/logo-row-top/IDF.png" alt="">
+                    <img src="Graphics/logo-row-top/RYKER.png" alt="">
+                    <img src="Graphics/logo-row-top/SHIBA.png" alt="">
+                    <img src="Graphics/logo-row-top/buywith.png" style="height: 40px;" alt="">
+                    <img src="Graphics/logo-row-top/SHANIDER.png" alt="">
+                    <img class="small-logos" src="Graphics/logo-row-top/TRIZZ.png" style="height: 100px;" alt="">
+                    <img src="Graphics/logo-row-top/XPLAIN.png" alt="">
+                </div>
+            </div>
+
+            <div class="logo-rows" id="logo-row-bottom">
+                <div class="logo-row-collapse">
+                    <img class="small-logos" src="Graphics/logo-row-bottom/smashndeli.png" style="height: 120px;"
+                        alt="">
+                    <img src="Graphics/logo-row-bottom/kpmg.png" alt="">
+                    <img class="big-logos" src="Graphics/logo-row-bottom/N1 AGENCY.png" style="height: 30px;" alt="">
+                    <img src="Graphics/logo-row-bottom/mailil.png" alt="">
+                    <img src="Graphics/logo-row-bottom/STORIEZ.png" alt="">
+                    <img src="Graphics/logo-row-bottom/microsoft.png" alt="" style="height: 90px;">
+                    <img src="Graphics/logo-row-bottom/ZERO.png" alt="">
+                    <img src="Graphics/logo-row-bottom/team8.png" alt="">
+                    <img src="Graphics/logo-row-bottom/webwomen.png" alt="">
+                    <img src="Graphics/logo-row-bottom/timeout.png" alt="">
+                    <img src="Graphics/logo-row-bottom/horowitz.png" alt="">
+                </div>
+                <!-- Duplicate the content -->
+                <div class="logo-row-collapse">
+                    <img class="small-logos" src="Graphics/logo-row-bottom/smashndeli.png" style="height: 120px;"
+                        alt="">
+                    <img src="Graphics/logo-row-bottom/kpmg.png" alt="">
+                    <img class="big-logos" src="Graphics/logo-row-bottom/N1 AGENCY.png" style="height: 30px;" alt="">
+                    <img src="Graphics/logo-row-bottom/mailil.png" alt="">
+                    <img src="Graphics/logo-row-bottom/STORIEZ.png" alt="">
+                    <img src="Graphics/logo-row-bottom/microsoft.png" alt="" style="height: 90px;">
+                    <img src="Graphics/logo-row-bottom/ZERO.png" alt="">
+                    <img src="Graphics/logo-row-bottom/team8.png" alt="">
+                    <img src="Graphics/logo-row-bottom/webwomen.png" alt="">
+                    <img src="Graphics/logo-row-bottom/timeout.png" alt="">
+                    <img src="Graphics/logo-row-bottom/horowitz.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="cv-box">
+            <h1>What to hear more?</h1>
+            <a id="cv" href="./downloads/Shir Birenbaum CV.pdf" download="./downloads/Shir Birenbaum CV.pdf"><img src=""
+                    alt=""><img src="Graphics/download icon.svg" alt="download icon" style="">Download
+                my CV</a>
+        </div>
+
+
+
+    </section>
+
+    <!-- ------------------------contact section--------------------------------->
+
+    <section id="contact-us">
+        <div class="container" id="contact-container">
+            <div class="headline">
+                <h1></h1>
+            </div>
+
+            <div class="success">
+                <img src="Graphics/lets make you successful.png" alt="glowing text that says let's make you succesful"
+                    id="success-pic">
+            </div>
+            <div class="form-div">
+                <form id="forme" name="forme" id="forme">
+                    <label for="name">Your name</label>
+                    <br>
+                    <input type="text" id="name" required>
+                    <br>
+                    <label for="phone">Phone number</label>
+                    <br>
+                    <input type="cell" id="phone">
+                    <br>
+                    <label for="mail">Your favorite E-mail adress</label>
+                    <br>
+                    <input type="email" id="mail">
+                    <button>Send > </button>
+                </form>
+            </div>
+
+        </div>
+        <img src="Graphics/paperplane hand.svg" alt="a hand throwing a paper plane" id="paper-hand-pic">
+        <img src="Graphics/phone hand.svg" alt="a hand holding a smartphone" id="phone-hand-pic">
+    </section>
+
+
+    <!-- footer-->
+
+    <footer>
+        <div class="footer-line">
+            <p>© 2025 Designed and developed by Shir Birenbaum</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
