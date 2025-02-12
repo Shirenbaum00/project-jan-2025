@@ -154,6 +154,8 @@ button:hover {
 
 }
 
+
+
 /* Mobile responsiveness */
 
 
@@ -165,26 +167,24 @@ button:hover {
     }
 
     body {
-        max-width: 100%;
+        max-width: 100vw;
         overflow-x: hidden;
         /* Show the default system cursor */
         cursor: auto;
     }
 
     .container {
+        max-width: 100vw;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         display: block;
 
 
     }
 
     #model {
-        position: static;
-        margin-top: -50vh;
-        margin-left: 100px;
-        Display: Table-cell;
-        vertical-align: middle;
+
+        overflow-x: hidden;
         z-index: 1;
         pointer-events: none;
     }
@@ -195,7 +195,8 @@ button:hover {
     }
 
     h1 {
-        font-size: 20vh;
+        margin-bottom: -15vh;
+        font-size: 18vh;
     }
 
     form {
